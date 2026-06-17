@@ -1,0 +1,174 @@
+2026-06-17 15:26:37 | main         | INFO     | Initializing Samsung Auto Trader...
+2026-06-17 15:26:37 | trader       | INFO     | Trader started. Waiting for the trading window...
+2026-06-17 15:26:37 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:26:37 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:26:40 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:26:40 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:26:47 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:26:47 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:26:47 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:26:47 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:26:47 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:26:47 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:26:47 | api_client   | ERROR    | API Request failed for /uapi/domestic-stock/v1/trading/order-cash with tr_id VTTC0801U
+2026-06-17 15:26:47 | api_client   | ERROR    | Error details: 500 Server Error: Internal Server Error for url: https://openapivts.koreainvestment.com:29443/uapi/domestic-stock/v1/trading/order-cash
+2026-06-17 15:26:47 | api_client   | ERROR    | API Response text: {"rt_cd":"1","msg1":"초당 거래건수를 초과하였습니다.","msg_cd":"EGW00201","message":"EGW00201"}
+2026-06-17 15:26:47 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:26:48 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:26:48 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:26:51 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:26:51 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:26:51 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:26:51 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:27:01 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:27:01 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:01 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:27:01 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:01 | api_client   | ERROR    | API Request failed for /uapi/domestic-stock/v1/trading/inquire-balance with tr_id VTTC8434R
+2026-06-17 15:27:01 | api_client   | ERROR    | Error details: 500 Server Error: Internal Server Error for url: https://openapivts.koreainvestment.com:29443/uapi/domestic-stock/v1/trading/inquire-balance?CANO=50177275&ACNT_PRDT_CD=01&AFHR_FLPR_YN=N&OFL_YN=&INQR_DVSN=02&UNPR_DVSN=01&FUND_STTL_ICLD_YN=N&FNCG_AMT_AUTO_RDPT_YN=N&PRCS_DVSN=01&CTX_AREA_FK100=&CTX_AREA_NK100=
+2026-06-17 15:27:01 | api_client   | ERROR    | API Response text: {"rt_cd":"1","msg1":"초당 거래건수를 초과하였습니다.","msg_cd":"EGW00201","message":"EGW00201"}
+2026-06-17 15:27:01 | account      | ERROR    | Failed to fetch account balance.
+2026-06-17 15:27:01 | trader       | WARNING  | Skipping cycle due to failed balance check.
+2026-06-17 15:27:01 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:27:11 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:27:11 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:13 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:27:13 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:20 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:27:20 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:27:20 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:23 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:27:23 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:27:23 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:25 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:27:25 | orders       | ERROR    | Message: 모의투자 잔고내역이 없습니다.
+2026-06-17 15:27:26 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:27:26 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:31 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:27:31 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:27:31 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:27:31 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:27:41 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:27:41 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:43 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:27:43 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:49 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:27:49 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:27:49 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:50 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:27:50 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:27:50 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:50 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:27:50 | orders       | ERROR    | Message: 모의투자 잔고내역이 없습니다.
+2026-06-17 15:27:52 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:27:52 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:27:57 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:27:57 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:27:57 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:27:57 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:28:07 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:28:07 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:09 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:28:09 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:16 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:28:16 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:28:16 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:17 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:28:17 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:28:17 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:17 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:28:17 | orders       | ERROR    | Message: 모의투자 잔고내역이 없습니다.
+2026-06-17 15:28:18 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:28:18 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:25 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:28:25 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:28:25 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:28:25 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:28:35 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:28:35 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:38 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:28:38 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:42 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:28:42 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:28:42 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:42 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:28:42 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:28:42 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:42 | api_client   | ERROR    | API Request failed for /uapi/domestic-stock/v1/trading/order-cash with tr_id VTTC0801U
+2026-06-17 15:28:42 | api_client   | ERROR    | Error details: 500 Server Error: Internal Server Error for url: https://openapivts.koreainvestment.com:29443/uapi/domestic-stock/v1/trading/order-cash
+2026-06-17 15:28:42 | api_client   | ERROR    | API Response text: {"rt_cd":"1","msg1":"초당 거래건수를 초과하였습니다.","msg_cd":"EGW00201","message":"EGW00201"}
+2026-06-17 15:28:42 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:28:43 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:28:43 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:47 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:28:47 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:28:47 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:28:47 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:28:57 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:28:57 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:28:58 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:28:58 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:01 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:29:01 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:29:01 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:01 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:29:01 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:29:01 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:03 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:29:03 | orders       | ERROR    | Message: 모의투자 잔고내역이 없습니다.
+2026-06-17 15:29:04 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:29:04 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:13 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:29:13 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:29:13 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:29:13 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:29:23 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:29:23 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:25 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:29:25 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:29 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:29:29 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:29:29 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:29 | orders       | INFO     | BUY Order Successful! Message: 모의투자 매수주문이 완료 되었습니다.
+2026-06-17 15:29:29 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:29:29 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:29 | api_client   | ERROR    | API Request failed for /uapi/domestic-stock/v1/trading/order-cash with tr_id VTTC0801U
+2026-06-17 15:29:29 | api_client   | ERROR    | Error details: 500 Server Error: Internal Server Error for url: https://openapivts.koreainvestment.com:29443/uapi/domestic-stock/v1/trading/order-cash
+2026-06-17 15:29:29 | api_client   | ERROR    | API Response text: {"rt_cd":"1","msg1":"초당 거래건수를 초과하였습니다.","msg_cd":"EGW00201","message":"EGW00201"}
+2026-06-17 15:29:29 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:29:30 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:29:30 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:36 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:29:36 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:29:36 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:29:36 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:29:46 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:29:46 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:46 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:29:46 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:46 | api_client   | ERROR    | API Request failed for /uapi/domestic-stock/v1/trading/inquire-balance with tr_id VTTC8434R
+2026-06-17 15:29:46 | api_client   | ERROR    | Error details: 500 Server Error: Internal Server Error for url: https://openapivts.koreainvestment.com:29443/uapi/domestic-stock/v1/trading/inquire-balance?CANO=50177275&ACNT_PRDT_CD=01&AFHR_FLPR_YN=N&OFL_YN=&INQR_DVSN=02&UNPR_DVSN=01&FUND_STTL_ICLD_YN=N&FNCG_AMT_AUTO_RDPT_YN=N&PRCS_DVSN=01&CTX_AREA_FK100=&CTX_AREA_NK100=
+2026-06-17 15:29:46 | api_client   | ERROR    | API Response text: {"rt_cd":"1","msg1":"초당 거래건수를 초과하였습니다.","msg_cd":"EGW00201","message":"EGW00201"}
+2026-06-17 15:29:46 | account      | ERROR    | Failed to fetch account balance.
+2026-06-17 15:29:46 | trader       | WARNING  | Skipping cycle due to failed balance check.
+2026-06-17 15:29:46 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:29:56 | trader       | INFO     | --- Starting new trading cycle ---
+2026-06-17 15:29:56 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:29:57 | market_data  | INFO     | Current price for 005930: 346000 KRW
+2026-06-17 15:29:57 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:30:01 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:30:01 | orders       | INFO     | Submitting BUY order for 1 shares at 345000 KRW...
+2026-06-17 15:30:01 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:30:03 | orders       | ERROR    | BUY Order Failed.
+2026-06-17 15:30:03 | orders       | ERROR    | Message: 모의투자 장종료 입니다.
+2026-06-17 15:30:03 | orders       | INFO     | Submitting SELL order for 1 shares at 347000 KRW...
+2026-06-17 15:30:03 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:30:06 | orders       | ERROR    | SELL Order Failed.
+2026-06-17 15:30:06 | orders       | ERROR    | Message: 모의투자 장종료 입니다.
+2026-06-17 15:30:07 | trader       | INFO     | Checking balance to confirm execution status...
+2026-06-17 15:30:07 | auth         | INFO     | Reusing cached access token.
+2026-06-17 15:30:15 | account      | INFO     | Account Balance: 100000000 KRW | Holdings for 005930: 2 shares
+2026-06-17 15:30:15 | trader       | INFO     | No change in balance or holdings detected immediately.
+2026-06-17 15:30:15 | trader       | INFO     | --- Cycle complete ---
+2026-06-17 15:30:15 | trader       | INFO     | Sleeping for 10 seconds...
+2026-06-17 15:30:25 | trader       | INFO     | Trading window closed for today. Exiting.
