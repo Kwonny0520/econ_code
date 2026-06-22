@@ -39,9 +39,9 @@ def get_account_balance():
             # output2 contains the overall account summary
             output2 = response_data.get("output2", [])
             if output2:
-                # dnca_tot_amt is total deposit amount, or prvs_rcdl_excc_amt
-                # using prvs_rcdl_excc_amt (previous day's cash balance) or dnca_tot_amt
-                result["available_cash"] = int(output2[0].get("dnca_tot_amt", 0))
+                # prvs_rcdl_excc_amt: 주문 가능 현금 (실시간 반영됨)
+                # dnca_tot_amt는 전일 기준이라 당일 매수 후 즉시 변하지 않음
+                result["available_cash"] = int(output2[0].get("prvs_rcdl_excc_amt", 0))
                 
             # output1 contains a list of holdings
             holdings = response_data.get("output1", [])

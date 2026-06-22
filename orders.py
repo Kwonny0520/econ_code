@@ -39,7 +39,13 @@ def place_order(order_type: str, price: int, qty: int = 1) -> bool:
         logger.info(f"{logger_action} Order Successful! Message: {msg}")
         return True
     else:
-        logger.error(f"{logger_action} Order Failed.")
-        if response_data:
-            logger.error(f"Message: {response_data.get('msg1')}")
+        msg = response_data.get("msg1", "") if response_data else ""
+        # 잔고내역이 없는 경우 (미체결 주문 미정산)는 예상된 상황이므로 WARNING으로 처리
+        if "잔고내역이 없습니다" in msg:
+            logger.warning(f"{logger_action} Order skipped: {msg}")
+        else:
+            logger.error(f"{logger_action} Order Failed.")
+            if msg:
+                logger.error(f"Message: {msg}")
         return False
+

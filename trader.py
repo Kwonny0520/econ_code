@@ -52,8 +52,9 @@ def run_trading_cycle():
     Executes one single iteration of the trading logic:
     1. Check price
     2. Check balance
-    3. Place buy/sell orders
-    4. Check balance again to see updates
+    3. Place sell order (based on EXISTING holdings before this cycle's buy)
+    4. Place buy order
+    5. Check balance again to see updates
     """
     logger.info("--- Starting new trading cycle ---")
     
@@ -68,19 +69,22 @@ def run_trading_cycle():
     if not initial_balance:
         logger.warning("Skipping cycle due to failed balance check.")
         return
-        
-    # 3. Place Buy order
-    buy_price = snap_to_tick(current_price - PRICE_DELTA)
-    place_order("BUY", buy_price, qty=1)
     
-    # 4. Place Sell order
+    # 3. Place SELL order first (based on holdings already confirmed before this buy)
+    #    모의투자에서 매수 직후 즉시 SELL하면 '잔고내역이 없습니다' 에러가 남.
+    #    따라서 이전 사이클에서 체결되어 이미 보유 중인 수량에 대해서만 SELL.
     sell_price = snap_to_tick(current_price + PRICE_DELTA)
     if initial_balance["target_qty"] > 0:
         place_order("SELL", sell_price, qty=1)
+        time.sleep(1)  # 초당 거래건수 초과(EGW00201) 방지
     else:
         logger.info("Skipping SELL order: No holdings available.")
         
-    # Wait a tiny bit before fetching final balance
+    # 4. Place Buy order
+    buy_price = snap_to_tick(current_price - PRICE_DELTA)
+    place_order("BUY", buy_price, qty=1)
+        
+    # Wait a bit before fetching final balance
     time.sleep(1)
     
     # 5. Check balance & holdings again to verify execution

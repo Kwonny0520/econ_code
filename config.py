@@ -26,9 +26,9 @@ else:
 TARGET_SYMBOL = "005930"  # Samsung Electronics
 PRICE_DELTA = 1000        # KRW offset for buy/sell limits
 
-# Trading Window (Mock trading only)
-START_TIME = "09:10:00"
-END_TIME = "15:30:00"
+# Trading Window (시간 제한 없음 - 24시간 실행)
+START_TIME = "00:00:00"
+END_TIME = "23:59:59"
 
 # --- API Endpoints (Mock Trading) ---
 BASE_URL = "https://openapivts.koreainvestment.com:29443"
@@ -38,4 +38,4 @@ BASE_URL = "https://openapivts.koreainvestment.com:29443"
 # Note: For mock trading, the App Key and Secret are different from the real trading ones.
 
 # Polling configuration
-POLLING_INTERVAL = 10  # Seconds to wait between full trading cycles
+POLLING_INTERVAL = 30  # Seconds to wait between full trading cycles
